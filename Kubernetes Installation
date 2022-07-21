@@ -15,6 +15,8 @@ apt-get update -y
 apt list -a kubeadm
 apt install -y kubelet kubeadm containerd
 
+apt install -y kubectl
+
 
 
 cat <<EOF | sudo tee /etc/modules-load.d/containerd.conf
